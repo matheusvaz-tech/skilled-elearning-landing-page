@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #13183f;
+  --color-neutral-principal: #ffffff;
+  --color-neutral-body: #83869a;
+  --color-secondary: #f74780;
+  --color-gradient-body: linear-gradient(#ffffff, #f0f1ff);
+  --color-gradient-main: linear-gradient(to top, #f02aa6, #ff6f48);
+  --color-gradient-footer: linear-gradient(#4851ff, #f02aa6);
+
+  --fs-heading-xl: 3.5rem;
+  --fs-heading-s: 1.5rem;
+  --fs-body-m: 1.125rem;
+  --fs-body-s: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-gradient-body);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+header,
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header,
+section,
+.principal-content {
+  margin: 0 10.25rem;
+}
+
+header {
+  margin-top: 1.5rem;
+}
+
+header .logo {
+  color: var(--color-primary);
+}
+
+button {
+  background: var(--color-primary);
+  color: var(--color-neutral-principal);
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  padding: 1rem 2rem;
+
+  border: none;
+  border-radius: 2rem;
+
+  z-index: 1000;
+
+  transition: 0.4s;
+}
+
+main {
+  margin-bottom: 5rem;
+}
+
+main h1 {
+  font-size: var(--fs-heading-xl);
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+main p {
+  color: var(--color-neutral-body);
+  font-size: var(--fs-body-m);
+  line-height: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.principal-content button {
+  background-image: var(--color-gradient-main);
+}
+
+.image-main-desktop {
+  max-width: 38.5rem;
+  margin: -5rem -2.5rem;
+}
+
+.image-main-ipad,
+.image-main-mobile {
+  display: none;
+}
+
+.courses {
+  display: grid;
+  gap: 3.5rem 2rem;
+  grid-template-areas:
+    "A B C"
+    "D E F";
+}
+
+.courses .courses-title {
+  background: var(--color-gradient-main);
+}
+
+.courses-title,
+.course {
+  height: 20.125rem;
+  border-radius: 1rem;
+}
+
+.courses-title h2 {
+  color: var(--color-neutral-principal);
+  margin: 4rem 2rem auto;
+}
+
+.course {
+  background: var(--color-neutral-principal);
+  position: relative;
+
+  box-shadow: 0 1.5rem 3rem rgba(6, 22, 141, 0.0442381);
+}
+
+.course img {
+  margin: 0 2rem;
+  position: absolute;
+  top: -1.5rem;
+}
+
+.course h3 {
+  color: var(--color-primary);
+  font-size: var(--fs-heading-s);
+  margin-bottom: 1.5rem;
+}
+
+.course-text,
+.course a {
+  margin: 4rem 2rem 1.5rem;
+}
+
+.course a {
+  position: absolute;
+  bottom: 2.5rem;
+
+  text-decoration: none;
+  font-size: var(--fs-body-m);
+  color: var(--color-secondary);
+
+  font-weight: 500;
+}
+
+.course-text p {
+  font-size: var(--fs-body-s);
+  line-height: 1.5;
+  color: var(--color-neutral-body);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 6rem;
+  padding: 2rem 10.25rem;
+
+  background: var(--color-primary);
+}
+
+footer h2 {
+  color: var(--color-neutral-principal);
+}
+
+footer button {
+  background: var(--color-gradient-footer);
+}
+
+button:hover,
+.get-started-header:hover {
+  filter: brightness(2.24);
+  cursor: pointer;
+}
