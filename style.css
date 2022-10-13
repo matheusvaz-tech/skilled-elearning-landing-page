@@ -21,13 +21,17 @@
   --fs-body-s: 1rem;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: var(--color-gradient-body);
   font-family: "Plus Jakarta Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 header,
@@ -90,8 +94,8 @@ main p {
 }
 
 .image-main-desktop {
-  max-width: 38.5rem;
-  margin: -5rem -2.5rem;
+  max-width: 38rem;
+  margin: -5rem -2.5rem 0;
 }
 
 .image-main-ipad,
@@ -189,6 +193,10 @@ button:hover,
 }
 
 @media (max-width: 1300px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .courses {
     display: grid;
     gap: 3.5rem 2rem;
