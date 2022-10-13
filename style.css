@@ -105,7 +105,7 @@ main p {
 
 .courses {
   display: grid;
-  gap: 3.5rem 2rem;
+  gap: 3rem 2rem;
   grid-template-areas:
     "A B C"
     "D E F";
@@ -117,13 +117,14 @@ main p {
 
 .courses-title,
 .course {
-  height: 20.125rem;
+  height: 20.5rem;
+  max-width: fit-content;
   border-radius: 1rem;
 }
 
 .courses-title h2 {
   color: var(--color-neutral-principal);
-  margin: 4rem 2rem auto;
+  padding: 4rem 2rem 0;
 }
 
 .course {
@@ -147,7 +148,7 @@ main p {
 
 .course-text,
 .course a {
-  margin: 4rem 2rem 1.5rem;
+  padding: 4rem 2rem 1.5rem;
 }
 
 .course a {
